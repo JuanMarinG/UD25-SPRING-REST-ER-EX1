@@ -12,7 +12,7 @@ import javax.persistence.Id;
 @Table(name = "articulos")
 public class articulos {
 
-//ATRIBUTOS TABLA FABRICANTES
+//ATRIBUTOS TABLA ARTICULOS
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
