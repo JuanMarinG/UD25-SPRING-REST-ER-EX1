@@ -9,10 +9,14 @@ CREATE TABLE Articulos(
 Id int not null auto_increment primary key,
 Nombre nvarchar(100),
 Precio int,
-FabricanteId int,
-FOREIGN KEY (FabricanteId) REFERENCES Fabricantes(Id)
+Fabricante_id int,
+FOREIGN KEY (Fabricante_id) REFERENCES Fabricantes(Id)
 );
 
-INSERT INTO Fabricantes (NOMBRE) VALUES ('Sony');
-INSERT INTO Fabricantes (NOMBRE) VALUES ('Apple');
-INSERT INTO Fabricantes (NOMBRE) VALUES ('Xiaomi');
+INSERT INTO Fabricantes (Nombre) VALUES ('Sony');
+INSERT INTO Fabricantes (Nombre) VALUES ('Apple');
+INSERT INTO Fabricantes (Nombre) VALUES ('Xiaomi');
+
+INSERT INTO Articulos (Nombre, Precio, Fabricante_id) VALUES ('Tablet', 250, 1);
+INSERT INTO Articulos (Nombre, Precio, Fabricante_id) VALUES ('Pencil', 100, 2);
+INSERT INTO Articulos (Nombre, Precio, Fabricante_id) VALUES ('Smartphone', 200, 3);
