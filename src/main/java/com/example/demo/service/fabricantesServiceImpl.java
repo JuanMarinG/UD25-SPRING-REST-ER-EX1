@@ -8,6 +8,7 @@ import org.springframework.stereotype.Service;
 import com.example.demo.dao.IfabricantesDAO;
 import com.example.demo.dto.fabricantes;
 
+@Service
 public class fabricantesServiceImpl implements IfabricantesService {
 
 	@Autowired
